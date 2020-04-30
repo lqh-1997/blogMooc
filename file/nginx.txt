@@ -1,0 +1,29 @@
+nginx功能
+
+静态服务（cdn，放静态文件，服务端不需要解析的都可以用nginx配置静态服务）
+
+负载均衡（server集群，均摊流量）
+
+反向代理
+
+
+
+nginx配置信息
+
+`worker_processes 2;` 表示几个进程，可以根据cpu几核
+
+
+
+listen 表示nginx监听哪一个端口
+
+location 表示获取到的请求格式，然后传送到prosy_pass端口
+
+```
+server{
+	listen 8080
+	location /api/ {
+		proxy_pass http://localhost:8000
+	}
+}
+```
+

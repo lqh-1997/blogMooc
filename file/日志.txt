@@ -1,0 +1,27 @@
+### 日志类别
+
+访问日志access log，server端最重要的日志，能够获取到请求的各种信息
+
+自定义日志(包括自定义事件、错误记录)
+
+
+
+### 目录
+
+nodejs文件操作，nodejs stream 对cpu性能节省
+
+日志文件拆分、日志内容分析
+
+
+
+
+
+### 日志拆分
+
+日志拆分 linux的crontab(定时任务)
+
+将access.log拷贝并重命名 时间.access.log
+
+清空access.log文件，继续累计日志
+
+nodejs也可以做(但是shell脚本的速度会更加快 )
